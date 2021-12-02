@@ -18,8 +18,11 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayStrings) {
+  let virgulaMaisEspaco = ', ';
+  let primeiroItem = arrayStrings[0];
+  let ultimoItem = arrayStrings[arrayStrings.length - 1];
+  return ultimoItem.concat(virgulaMaisEspaco, primeiroItem);
 }
 
 // Desafio 5

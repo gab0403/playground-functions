@@ -1,15 +1,15 @@
 // Desafio 1
 function compareTrue(value1, value2) {
-  if(value1 === true && value2 === true){
+  if (value1 === true && value2 === true) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
 
 // Desafio 2
 function calcArea(base, heigth) {
-   return (base * heigth) / 2;
+  return (base * heigth) / 2;
 }
 
 // Desafio 3
@@ -32,8 +32,15 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numerosArray) {
+  let Repeticao = 0;
+  let maiorNumero = Math.max(...numerosArray);
+  for (let index = 0; index < numerosArray.length; index += 1) {
+    if (numerosArray[index] === maiorNumero) {
+      Repeticao++;
+    }
+  }
+  return Repeticao;
 }
 
 // Desafio 7

@@ -49,18 +49,31 @@ function catAndMouse(mouse, cat1, cat2) {
   let distanciaCat2Mouse = Math.abs(cat2-mouse);
   if (distanciaCat1Mouse < distanciaCat2Mouse){
 return("cat1");
-  } if (distanciaCat2Mouse < distanciaCat1Mouse) {
+  } else if (distanciaCat2Mouse < distanciaCat1Mouse) {
     return("cat2");
-  } if(distanciaCat1Mouse === distanciaCat2Mouse){
+  } else if(distanciaCat1Mouse === distanciaCat2Mouse){
     return("os gatos trombam e o rato foge");
   }
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(numeros) {
+  let string = [];
+    for ( let index of numeros)  {
+  if (index % 15 === 0) {
+     string.push('fizzBuzz');
+    } else if (index % 3 === 0) {
+       string.push('fizz');
+    } else if (index % 5 === 0) {
+      string.push('buzz')
+    } else {
+       string.push('bug!');
+    }    
+  }
+  return string;
 
+}
+    
 // Desafio 9
 function encode() {
   // seu código aqui
